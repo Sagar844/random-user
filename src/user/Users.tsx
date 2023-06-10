@@ -17,6 +17,7 @@ const Users: FC<Usersprops> = () => {
       try {
         const res = await getuser();
         setusers(res);
+        setuserdetails(res[0])
       } catch (error) {
         console.log(error);
       }
@@ -28,16 +29,16 @@ const Users: FC<Usersprops> = () => {
 
   return (
     <>
-      <div className="flex justify-center  items-center space-x-5 my-40">
+      <div className="flex justify-center  items-center space-x-5 space-y-5 my-40">
         <div>
           <img
             className="w-20  rounded-full "
-            src={usersDetail?.picture?.thumbnail}
+            src={usersDetail?.picture?.large}
             alt=""
           />
         </div>
         <div>
-          <h2 className="text-6xl text-red-400 font-bold  ">{usersDetail?.name?.first}</h2>
+          <h2 className="text-6xl text-red-400 font-bold   ">{usersDetail?.name?.first}</h2>
           <div className="flex space-x-2">
             <h6>{usersDetail?.location?.city}</h6>
             <h3>{usersDetail?.location?.country}</h3>

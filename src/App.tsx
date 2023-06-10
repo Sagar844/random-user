@@ -6,11 +6,11 @@ import Users from "./user/Users"
 
 const App = () => {
 
-    return(
+    return (
         <>
-        <Navbar/>
-        <UsersDetail />
-        <Users />
+            <Navbar />
+            <UsersDetail />
+            <Users />
         </>
     )
 }
