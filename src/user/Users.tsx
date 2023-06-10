@@ -49,7 +49,7 @@ const Users: FC<Usersprops> = () => {
         </div>
       </div>
 
-      <div className=" grid grid-cols-4 gap-4 mx-20 justify-center my-30">
+      <div className=" grid sm:grid-cols-2 grid-cols-4 md:mx-20  gap-4 lg:mx-20 justify-center my-30">
         {users.map((item) => {
           return (
             <>
