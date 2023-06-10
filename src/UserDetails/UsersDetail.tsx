@@ -10,7 +10,7 @@ type UserDetailprops = {
 const UsersDetail: FC<UserDetailprops> = () => {
     return <>
         <div className="flex justify-center mx-auto">
-            {/* <h1> {data.name.first}</h1> */}
+       
         </div>
 
 
